@@ -1,6 +1,6 @@
 var CONFIG = {
   // your website's title
-  document_title: "标题",
+  document_title: "Python 笔记",
 
   // index page
   index: "README.md",
