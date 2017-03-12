@@ -7,6 +7,7 @@
 ## Python基础
 
 0. [前言](#README)
+0. [列表函数](#docs/function_list)
 0. [包函数](#docs/basic_pkg)
 0. [相关资源](#docs/basic_resource)
 0. [Demo解析](#docs/basic_demo)
