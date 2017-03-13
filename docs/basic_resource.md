@@ -7,5 +7,6 @@
 
 ### 其他资源
 
+- [Runoob Python教程](http://www.runoob.com/python)
 
 
