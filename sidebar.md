@@ -8,6 +8,7 @@
 
 0. [前言](#README)
 0. [基本语法](#docs/basic_syntax)
+0. [更多语法](#docs/basic_syntax2)
 0. [列表函数](#docs/function_list)
 0. [元组函数](#docs/function_tuple)
 0. [字符串函数](#docs/function_string)
@@ -16,6 +17,11 @@
 0. [相关资源](#docs/basic_resource)
 0. [Demo解析](#docs/basic_demo)
 0. [运行FAQ](#docs/basic_run_faq)
+
+
+## 实例应用
+
+0. [模块接口](#docs/sample_interface)
 
 
 ## 读书笔记
