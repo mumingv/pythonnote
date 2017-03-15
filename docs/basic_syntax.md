@@ -275,6 +275,17 @@ $ python -Qnew
 >>> 
 ```
 
+示例：输出字符串
+
+```
+>>> print 'Hello world!'
+Hello world!
+```
+```
+>>> print 'Bli ' * 2 + 'Xiaomoxian!'
+Bli Bli Xiaomoxian!
+```
+
 
 ## 其他
 
