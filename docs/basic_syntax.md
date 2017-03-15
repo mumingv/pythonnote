@@ -289,3 +289,40 @@ Bli Bli Xiaomoxian!
 
 ## 其他
 
+###  
+
+#### 命令行帮助
+
+进入帮助
+
+```
+>>> help()
+```
+
+查询模块信息(modules)
+
+```
+help> modules
+```
+```
+help> __builtin__
+```
+
+查询关键字信息(keywords)
+
+```
+help> keywords
+```
+```
+help> print
+```
+
+查询主题信息(topics)
+
+```
+help> topics
+```
+```
+help> SLICINGS
+```
+
