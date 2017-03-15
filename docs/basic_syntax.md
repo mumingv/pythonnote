@@ -32,6 +32,11 @@ comment...
 ## 函数
 
 
+## 序列
+
+通用序列操作主要包括：索引(indexing)、分片(slicing)、加(adding)、乘(multiplying)、成员资格(in)。
+
+
 ## 序列：列表
 
 
@@ -39,6 +44,81 @@ comment...
 
 
 ## 序列：字符串
+
+###  
+
+#### 索引
+
+```
+>>> foo = 'Hello World!'
+>>> foo[1]
+'e'
+```
+
+
+#### 分片
+
+<font color="red">
+说明：分片索引遵循“包头不包尾”原则。
+</font>
+
+示例：获取字符串中的单词
+
+```
+>>> foo = 'Hello World!'
+>>> foo[6:-1]
+'World'
+```
+
+示例：未指定开始索引，则默认从字符串头部开始
+
+```
+>>> foo = 'Hello World!'
+>>> foo[:5]             
+'Hello'
+```
+
+示例：未指定结束索引，则默认到字符串尾部结束
+
+```
+>>> foo = 'Hello World!'
+>>> foo[6:]
+'World!'
+```
+
+
+#### 加
+
+<font color="red">
+说明：加在这里表示连接字符串。
+</font>
+
+```
+>>> 'Hello' + 'World' + '!'
+'HelloWorld!'
+```
+
+
+#### 乘
+
+<font color="red">
+说明：乘在这里表示重复字符串。
+</font>
+
+```
+>>> 'Hello' * 3
+'HelloHelloHello'
+```
+
+
+#### 成员资格
+
+```
+>>> 'o' in 'Hello World!'
+True
+>>> 'a' in 'Hello World!' 
+False
+```
 
 
 ## 映射：字典
