@@ -9,6 +9,7 @@
 0. [前言](#README)
 0. [基本语法](#docs/basic_syntax)
 0. [更多语法](#docs/basic_syntax2)
+0. [内建函数](#docs/function_builtin)
 0. [列表函数](#docs/function_list)
 0. [元组函数](#docs/function_tuple)
 0. [字符串函数](#docs/function_string)
