@@ -299,6 +299,24 @@ for number in range(0, 10):
 ```
 
 
+#### 遍历字典
+
+<font color="red">
+说明：遍历的是字典的key，而不是value。
+</font>
+
+```
+dict = {'x': 1, 'y': 2, 'z': 3}
+for key in dict:
+    print key, 'corresponds to', dict[key]
+```
+```
+y corresponds to 2
+x corresponds to 1
+z corresponds to 3
+```
+
+
 ### 循环语句 while
 
 ```
