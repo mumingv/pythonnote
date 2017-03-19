@@ -44,6 +44,7 @@
 |raw_input([prompt])        |返回给定对象的长度（项的个数）         |
 |range([start, ]stop[, step])|通过一组访问器创建属性                |
 |isinstance(object, classinfo)|检查对象是否为类的一个实例           |
+|repr(object)               |返回表示对象的字符串                   |
 
 
 ## 内建函数示例
@@ -61,6 +62,17 @@ else:
 ```
 ```
 true
+```
+
+
+#### repr
+
+```
+obj = (1, 2, 3)
+print repr(obj)
+```
+```
+(1, 2, 3)
 ```
 
 
