@@ -43,4 +43,27 @@
 |len(object)                |返回给定对象的长度（项的个数）         |
 |raw_input([prompt])        |返回给定对象的长度（项的个数）         |
 |range([start, ]stop[, step])|通过一组访问器创建属性                |
+|isinstance(object, classinfo)|检查对象是否为类的一个实例           |
+
+
+## 内建函数示例
+
+###  
+
+#### isinstance
+
+```
+obj = (1, 2, 3)
+if isinstance(obj, tuple):
+    print 'true'
+else:
+    print 'false'
+```
+```
+true
+```
+
+
+
+
 
