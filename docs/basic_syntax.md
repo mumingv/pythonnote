@@ -116,6 +116,30 @@ Hello Jay!
 ```
 
 
+## 类
+
+###  
+
+#### 类的定义与使用
+
+```
+class Person:
+    def setName(self, name):
+        self.name = name
+    def getName(self):
+        return self.name
+    def sayHello(self):
+        print "Hello, world! I'm %s." % self.name
+
+foo = Person()
+foo.setName('Jay')
+foo.sayHello()
+```
+```
+Hello, world! I'm Jay.
+```
+
+
 ## 序列
 
 通用序列操作主要包括：索引(indexing)、分片(slicing)、加(adding)、乘(multiplying)、成员资格(in)。
