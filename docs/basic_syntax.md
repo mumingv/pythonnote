@@ -411,6 +411,8 @@ $ python -Qnew
 
 #### None
 
+None是一个内建常量，通常用来表示变量值的缺失。
+
 
 #### print
 
