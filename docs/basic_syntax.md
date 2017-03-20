@@ -140,6 +140,24 @@ Hello, world! I'm Jay.
 ```
 
 
+#### 类的构造函数
+
+```python
+class ListNode(object):
+    def __init__(self, x): 
+        self.val = x 
+        self.next = None
+
+node = ListNode(0)
+print node.val
+print node.next
+```
+```
+0
+None
+```
+
+
 ## 序列
 
 通用序列操作主要包括：索引(indexing)、分片(slicing)、加(adding)、乘(multiplying)、成员资格(in)。
@@ -390,6 +408,9 @@ $ python -Qnew
 ## 关键字
 
 ###  
+
+#### None
+
 
 #### print
 
