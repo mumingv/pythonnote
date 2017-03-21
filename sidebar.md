@@ -30,6 +30,10 @@
 0. [《Python基础教程》](#docs/book_begin)
 
 
+## 视频笔记
+
+0. [七月在线](#docs/video_julyedu)
+
 
 
 ## 附录 
