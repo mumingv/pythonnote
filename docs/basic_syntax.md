@@ -421,6 +421,11 @@ $ python -Qnew
 
 ###  
 
+#### False
+
+False表示真值。
+
+
 #### None
 
 None是一个内建常量，通常用来表示变量值的缺失。
@@ -446,6 +451,11 @@ Hello world!
 >>> print 'Bli ' * 2 + 'Xiaomoxian!'
 Bli Bli Xiaomoxian!
 ```
+
+
+#### True
+
+True表示真值。
 
 
 ## 其他
