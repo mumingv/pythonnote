@@ -249,6 +249,27 @@ False
 
 ## 映射：字典
 
+###  
+
+#### 定义
+
+```
+people = { 
+    'Alice': {
+        'phone': '2341',
+        'addr': 'Foo drive 23'
+    },  
+    'Beth': {
+        'phone': '9102',
+        'addr': 'Bar street 42'
+    },  
+    'Cecil': {
+        'phone': '3158',
+        'addr': 'Baz avenue 90'
+    }   
+}
+```
+
 
 ## 集合：集合
 
