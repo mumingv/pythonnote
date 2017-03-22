@@ -327,6 +327,22 @@ else:
 
 ### 循环语句 for...in...
 
+#### 遍历字符串
+
+```
+string = 'Hello'
+for c in string:
+    print c
+```
+```
+H
+e
+l
+l
+o
+```
+
+
 #### 遍历字符串列表
 
 ```
