@@ -463,10 +463,32 @@ $ python -Qnew
 False表示真值。
 
 
+###  
+
 #### None
 
 None是一个内建常量，通常用来表示变量值的缺失。
 
+
+###  
+
+#### not
+
+not是逻辑非运算符。
+
+示例：判断列表是否为空
+
+```
+list1 = []
+if not list1:
+    print 'empty list'
+```
+```
+empty list
+```
+
+
+###  
 
 #### print
 
@@ -489,6 +511,8 @@ Hello world!
 Bli Bli Xiaomoxian!
 ```
 
+
+###  
 
 #### True
 
