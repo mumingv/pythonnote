@@ -22,7 +22,7 @@
 |zip(sequence1, ...)        |返回元组的列表                         |
 |map(function, sequence, ...)|返回由给定函数function应用到所提供列表sequence每个项目时返回的值组成的列表   |
 |dict([mapping-or-sequence])|构造一个字典                           |
-|set([iterable])            |返回从iterable生成的元素集合           |
+|set([iterable])            |返回从iterable生成的不重复元素集合           |
 |-                          |-                                      |
 |hex(number)                |将数字转换为16进制表示的字符串         |
 
@@ -109,11 +109,35 @@ print repr(obj)
 (1, 2, 3)
 ```
 
+#### set
+
+示例：将字符串拆解为字符集合并计算集合的交集、并集和差集
+
+<font color="red">
+说明：生成的字符集合中没有重复元素。
+</font>
+
+```python
+>>> x = set('runoob')
+>>> x
+set(['b', 'r', 'u', 'o', 'n'])
+>>> y = set('google')
+>>> y
+set(['e', 'o', 'g', 'l'])
+>>> x, y
+(set(['b', 'r', 'u', 'o', 'n']), set(['e', 'o', 'g', 'l']))
+>>> x & y
+set(['o'])
+>>> x | y
+set(['b', 'e', 'g', 'l', 'o', 'n', 'r', 'u'])
+>>> x - y
+set(['r', 'b', 'u', 'n'])
+```
+
 
 #### zip
 
-示例：两个列表压缩为一个，新列表中的元素为元组。
-
+示例：两个列表压缩为一个，新列表中的元素为元组。 
 ```
 >>> a = [1, 2, 3]
 >>> b = [4, 5, 6, 7]

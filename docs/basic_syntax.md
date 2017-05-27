@@ -398,6 +398,27 @@ z corresponds to 3
 ```
 
 
+### 循环语句 for...in...else...
+
+####  
+
+<font color="red">
+说明：else会在for语句正常执行完（即：没有break）的情况下执行。
+</font>
+
+```python
+>>> for c in 'abc':
+...     print c
+... else:
+...     print 'Finished!'
+... 
+a
+b
+c
+Finished!
+```
+
+
 ### 循环语句 while
 
 ```python
@@ -405,6 +426,29 @@ x = 1
 while x < 10:
     print x
     x += 1
+```
+
+
+### 循环语句 while...else...
+
+####  
+
+<font color="red">
+说明：else会在for语句正常执行完（即：没有break）的情况下执行。
+</font>
+
+```python
+>>> x = 1
+>>> while x <= 3:
+...     print x  
+...     x += 1
+... else:
+...     print 'Finished!'
+... 
+1
+2
+3
+Finished!
 ```
 
 
