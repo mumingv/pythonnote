@@ -345,10 +345,24 @@ o
 
 #### 遍历字符串列表
 
+方式一：
+
 ```python
 words = ['this', 'is', 'python', 'note']
 for word in words:
     print word
+```
+
+方式二：
+
+```python
+>>> seq = ['one', 'two', 'three']
+>>> for i, element in enumerate(seq):
+...     print i, seq[i]
+... 
+0 one
+1 two
+2 three
 ```
 
 

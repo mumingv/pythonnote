@@ -45,11 +45,45 @@
 |range([start, ]stop[, step])|通过一组访问器创建属性                |
 |isinstance(object, classinfo)|检查对象是否为类的一个实例           |
 |repr(object)               |返回表示对象的字符串                   |
+|enumerate(sequence, [start=0])|返回一个带索引和数据的枚举对象      |
 
 
 ## 内建函数示例
 
 ###  
+
+#### enumerate
+
+示例：将列表转换为带索引的列表
+
+```
+>>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+>>> list(enumerate(seasons))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+```
+
+<font color="red">
+注意：直接将enumerate作用于列表，不会得到期望的结果。
+</font>
+
+```
+>>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+>>> enumerate(seasons)
+<enumerate object at 0x7fd397205230>
+```
+
+示例：使用enumerate简化for循环
+
+```python
+>>> seq = ['one', 'two', 'three']
+>>> for i, element in enumerate(seq):
+...     print i, seq[i]
+... 
+0 one
+1 two
+2 three
+```
+
 
 #### isinstance
 
@@ -78,15 +112,34 @@ print repr(obj)
 
 #### zip
 
-两个列表合并为一个，新列表中的元素为元组。
+示例：两个列表压缩为一个，新列表中的元素为元组。
 
 ```
 >>> a = [1, 2, 3]
->>> b = [4, 5, 6]
+>>> b = [4, 5, 6, 7]
 >>> zip(a, b)
 [(1, 4), (2, 5), (3, 6)]
 ```
 
+示例：解压元组列表，返回二维矩阵模式。
+
+```
+>>> zipped = [(1, 4), (2, 5), (3, 6)]
+>>> zip(*zipped)
+[(1, 2, 3), (4, 5, 6)]
+```
+
+示例：解压字符串列表，返回二维矩阵模式。
+
+<font color="red">
+结果列表中的元素个数与最短的字符串长度一致。
+</font>
+
+```
+>>> strs = ['Hello world', 'Hello jay', 'Hello morning']
+>>> zip(*strs)
+[('H', 'H', 'H'), ('e', 'e', 'e'), ('l', 'l', 'l'), ('l', 'l', 'l'), ('o', 'o', 'o'), (' ', ' ', ' '), ('w', 'j', 'm'), ('o', 'a', 'o'), ('r', 'y', 'r')]
+```
 
 
 
