@@ -537,6 +537,31 @@ Bli Bli Xiaomoxian!
 
 ###  
 
+#### self
+
+self表示类自身。
+
+示例：类的定义与使用
+
+```python
+class Person:
+    def setName(self, name):
+        self.name = name
+    def getName(self):
+        return self.name
+    def sayHello(self):
+        print "Hello, world! I'm %s." % self.name
+
+foo = Person()
+foo.setName('Jay')
+foo.sayHello()
+```
+```python
+Hello, world! I'm Jay.
+```
+
+###  
+
 #### True
 
 True表示真值。
