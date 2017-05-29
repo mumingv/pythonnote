@@ -9,8 +9,22 @@
 
 ### urllib和urllib2模块
 
+示例：打开远程文件
+
+```
+>>> from urllib import urlopen
+>>> webpage = urlopen('http://www.python.org/')
+>>> import re
+>>> text = webpage.read()
+>>> m = re.search('<a href="([^"]+)" .*?>about</a>', text, re.IGNORECASE)
+>>> m.group(1)
+'/about/'
+```
+
 
 ### 其他模块
+
+略。
 
 
 ##  SocketServer和它的朋友们
