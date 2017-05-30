@@ -158,6 +158,20 @@ None
 ```
 
 
+#### 派生类的定义
+
+示例：定义类Handler，其派生自StreamRequestHandler
+
+```python
+class Handler(StreamRequestHandler):
+  
+    def handle(self):          
+        addr = self.request.getpeername()
+        print 'Got connection from', addr
+        self.wfile.write('Thank you for connecting')
+```
+
+
 ## 序列
 
 通用序列操作主要包括：索引(indexing)、分片(slicing)、加(adding)、乘(multiplying)、成员资格(in)。
@@ -525,7 +539,7 @@ False表示真值。
 
 #### from
 
-from用于导入模块或导入模块中的函数。
+from用于导入模块或导入模块中的类或函数。
 
 示例：导入模块
 
@@ -541,6 +555,19 @@ from用于导入模块或导入模块中的函数。
 >>> from math import floor
 >>> floor(32.9)
 32.0
+```
+
+
+###  
+
+#### import
+
+import用于导入模块或导入模块中的类或函数。
+
+示例：导入模块中的类
+
+```
+from SocketServer import TCPServer, StreamRequestHandler
 ```
 
 
@@ -566,6 +593,20 @@ if not list1:
 ```
 ```python
 empty list
+```
+
+
+###  
+
+#### or
+
+or是逻辑或运算符。
+
+示例：判断列表是否为空
+
+```python
+if not (readable or writable or exceptional):
+    break
 ```
 
 
