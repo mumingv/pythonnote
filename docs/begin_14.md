@@ -15,7 +15,7 @@
 >>> from urllib import urlopen
 >>> webpage = urlopen('http://www.python.org/')
 >>> import re
->>> text = webpage.read()  # 即：text = <a href="/about/" title="" class="">About</a>'
+>>> text = webpage.read()  # 即：text = '<a href="/about/" title="" class="">About</a>'
 >>> m = re.search('<a href="([^"]+)" .*?>about</a>', text, re.IGNORECASE)
 >>> m.group(1)
 '/about/'
