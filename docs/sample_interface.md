@@ -18,7 +18,11 @@ Year: 2017
 request_query_file = sys.argv[1]
 file = open(request_query_file)
 for line in file:
-    print line
+    line = line.strip("\r\n")
+    if not line:
+        print "empty"
+    else:
+        print line
 ```
 
 
