@@ -17,6 +17,7 @@
 0. [包函数](#docs/basic_pkg)
 0. [相关资源](#docs/basic_resource)
 0. [Demo解析](#docs/basic_demo)
+0. [语法FAQ](#docs/basic_syntax_faq)
 0. [运行FAQ](#docs/basic_run_faq)
 
 
