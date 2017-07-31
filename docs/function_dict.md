@@ -120,6 +120,21 @@
 ```
 
 
+#### 遍历
+
+##### 查询所有的key
+
+```
+>>> dict = {"zhangsan": 18, "lisi": 20, "wangwu": 22}
+>>> for key in dict:
+...     print key
+...
+lisi
+zhangsan
+wangwu
+```
+
+
 
 
 
