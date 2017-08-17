@@ -8,6 +8,8 @@
 
 |函数/方法          	|功能                           |
 |-------------------|-------------------------------|
+|re.compile() 		|根据模式生成一个正则表达式对象		|
+|re.match() 		|尝试从字符串的起始位置匹配一个模式	|
 
 
 ## Data Types 数据类型
@@ -16,8 +18,26 @@
 
 参考：[官方](https://docs.python.org/2/library/collections.html) & [木名](#docs/pkg_collections)
 
+|数据结构          	|功能                           |
+|-------------------|-------------------------------|
+|namedtuple()		||
+|deque  			|双端队列|
+|Counter 			||
+|OrderedDict 		||
+|defaultdict		|''|
+
+
+## File and Directory Access 文件和目录操作
+
+### os.path（部分）文件和目录的路径处理
+
+参考：[官方](https://docs.python.org/2/library/os.path.html) & [木名](#docs/pkg_os_path)
+
+要使用这里的方法，`import os` 和 `import os.path` 都可以。
+
 |函数/方法          	|功能                           |
 |-------------------|-------------------------------|
+|os.path.exists() 	|判断文件/目录的路径是否存在			|
 
 
 ## Generic Operating System Services 一般操作系统服务
@@ -64,6 +84,8 @@
 
 |函数/方法          	|功能                           |
 |-------------------|-------------------------------|
+|json.loads() 		|字符串转对象|
+|json.dumps() 		|对象转字符串|
 
 
 ## Python Runtime Services 运行时服务
@@ -72,9 +94,16 @@
 
 参考：[官方](https://docs.python.org/2/library/sys.html) & [木名](#docs/pkg_sys)
 
-|函数/方法          |功能                           |
+|属性/函数/方法       |功能                           |
 |-------------------|-------------------------------|
 |sys.argv           |数组，存放命令行参数           |
+|sys.stdin 			|文件对象，与标准输入对应 		|
+|sys.stdout 		|文件对象，与标准输出对应		|
+|sys.stderr 		|文件对象，与标准错误对应		|
+
+
+
+
 
 
 

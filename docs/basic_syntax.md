@@ -118,9 +118,7 @@ Hello Jay!
 
 ## 类
 
-###  
-
-#### 类的定义与使用
+### 类的定义与使用
 
 ```python
 class Person:
@@ -140,7 +138,7 @@ Hello, world! I'm Jay.
 ```
 
 
-#### 类的构造函数
+### 类的构造函数
 
 ```python
 class ListNode(object):
@@ -158,7 +156,7 @@ None
 ```
 
 
-#### 派生类的定义
+### 派生类的定义
 
 示例：定义类Handler，其派生自StreamRequestHandler
 
@@ -170,6 +168,32 @@ class Handler(StreamRequestHandler):
         print 'Got connection from', addr
         self.wfile.write('Thank you for connecting')
 ```
+
+
+### 内置类属性
+
+###### 
+
+|属性名称       |含义             |
+|--------------|----------------|
+|\_\_dict\_\_      | 类的属性（包含一个字典，由类的数据属性组成）|
+|\_\_doc\_\_       |类的文档字符串     |
+|\_\_name\_\_      |类名             |
+|\_\_module\_\_    |类定义所在的模块   |
+|\_\_bases\_\_     |类的所有父类构成元素（包含了一个由所有父类组成的元组）|
+
+
+### 内置类方法
+
+###### 
+
+|方法名称        |含义             |
+|---------------|----------------|
+|\_\_init\_\_   |构造函数         |
+|\_\_del\_\_    |析构函数         |
+|\_\_repr\_\_   |转化为供解释器读取的形式|
+|\_\_str\_\_    |用于将值转化为适于人阅读的形式|
+|\_\_cmp\_\_    |对象比较         |
 
 
 ## 序列
@@ -534,6 +558,31 @@ $ python -Qnew
 
 ## 关键字
 
+### and
+
+逻辑与操作符。
+
+
+### del
+
+#### 示例：删除对象
+
+```
+emp1 = Employee("Zara", 2000)
+del emp1
+```
+
+
+#### 示例：删除对象属性
+
+```
+emp1 = Employee("Zara", 2000)
+emp1.age = 7  # 添加一个 'age' 属性
+emp1.age = 8  # 修改 'age' 属性
+del emp1.age  # 删除 'age' 属性
+```
+
+
 ### False
 
 False表示真值。
@@ -551,12 +600,23 @@ from用于导入模块或导入模块中的类或函数。
 32.0
 ```
 
+
 #### 示例：导入模块中的函数
 
 ```
 >>> from math import floor
 >>> floor(32.9)
 32.0
+```
+
+
+#### 示例：导入自定义模块
+
+如当前目录下存在file_name.py文件，则可以将其当作模块导入。
+
+```
+>>> import file_name
+>>> file_name.func_name()
 ```
 
 
@@ -610,6 +670,11 @@ if not (readable or writable or exceptional):
 ```
 
 
+### pass
+
+pass是空语句，不做任何事情，一般用做占位语句。
+
+
 ### print
 
 #### 示例：输出空行
@@ -658,6 +723,25 @@ Hello, world! I'm Jay.
 ### True
 
 True表示真值。
+
+
+### \_\_name\_\_
+
+对于 \_\_name\_\_ 所在的模块（如：hello.py），如果直接执行该模块则其值为 `__main__`；如果该模块被import则其值为该模块名称（如：hello）。
+
+参考：http://www.cnblogs.com/hnrainll/archive/2011/09/01/2161943.html
+
+#### 示例：典型用法
+
+```
+# hello.py
+
+def main():
+    print 'hello'
+
+if __name__ == '__main__':
+    main()
+```
 
 
 ## 其他

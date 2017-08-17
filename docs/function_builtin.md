@@ -21,7 +21,7 @@
 |cmp 		||
 |compile	||
 |complex 	||
-|delattr	||
+|delattr	|删除对象的属性|
 |dict 		||
 |dir 		||
 |divmod 	||
@@ -33,17 +33,17 @@
 |float 		||
 |format 	||
 |frozenset 	||
-|getattr 	||
+|getattr 	|获取对象的属性|
 |globals 	||
-|hasattr	||
+|hasattr	|检查对象的属性是否存在|
 |hash 		||
 |help 		||
 |hex 		||
 |id 		||
 |input 		||
 |int 		||
-|isinstance ||
-|issubclass	||
+|isinstance |判断一个对象是否为指定类的实例对象或者是指定类的子类的实例对象|
+|issubclass	|判断一个类是否为另一个类的子类或者子孙类|
 |iter 		||
 |len 		||
 |list 		||
@@ -56,7 +56,7 @@
 |next 		||
 |object 	||
 |oct 		||
-|open 		||
+|open 		|打开文件|
 |ord		||
 |pow		||
 |print		||
@@ -69,7 +69,7 @@
 |reversed 	||
 |round 		||
 |set 		||
-|setattr 	||
+|setattr 	|设置一个属性。如果属性不存在，会创建一个新属性。|
 |slice 		||
 |sorted		||
 |staticmethod||
@@ -136,11 +136,20 @@
 
 ## 内建函数示例
 
-###  
+### delattr
 
-#### enumerate
+#### 示例
 
-示例：将列表转换为带索引的列表
+```
+emp1 = Employee("Zara", 2000)
+emp1.age = 7  # 添加一个 'age' 属性
+delattr(emp1, 'age')  # 删除 'age' 属性
+```
+
+
+### enumerate
+
+#### 示例：将列表转换为带索引的列表
 
 ```
 >>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
@@ -158,7 +167,8 @@
 <enumerate object at 0x7fd397205230>
 ```
 
-示例：使用enumerate简化for循环
+
+#### 示例：使用enumerate简化for循环
 
 ```python
 >>> seq = ['one', 'two', 'three']
@@ -171,7 +181,40 @@
 ```
 
 
-#### isinstance
+### getattr
+
+#### 示例
+
+```
+emp1 = Employee("Zara", 2000)
+emp1.age = 7  # 添加一个 'age' 属性
+print getattr(emp1, 'age')  // 7
+```
+
+
+### hasattr
+
+#### 示例
+
+```
+emp1 = Employee("Zara", 2000)
+emp1.age = 7  # 添加一个 'age' 属性
+print hasattr(emp1, 'age')  // True
+```
+
+
+### id
+
+#### 示例：打印对象的id
+
+```
+print id(obj)
+```
+
+
+### isinstance
+
+#### 示例
 
 ```
 obj = (1, 2, 3)
@@ -185,9 +228,20 @@ true
 ```
 
 
-#### range
+### len
 
-示例：创建一个包含10个数字的列表
+len可以用于一切可以计算其元素数量的对象，不仅限于元组和列表，其它类型（如：字符串、字典、集合等）都可以使用。
+
+#### 示例：获取命令行入参的个数
+
+```
+print len(sys.argv)
+```
+
+
+### range
+
+#### 示例：创建一个包含10个数字的列表
 
 ```python
 >>> range(10)
@@ -195,9 +249,9 @@ true
 ```
 
 
-#### reload
+### reload
 
-示例：设置输出文件的默认编码
+#### 示例：设置输出文件的默认编码
 
 ```
 reload(sys)
@@ -205,7 +259,9 @@ sys.setdefaultencoding('utf-8')
 ```
 
 
-#### repr
+### repr
+
+#### 示例
 
 ```
 obj = (1, 2, 3)
@@ -215,9 +271,10 @@ print repr(obj)
 (1, 2, 3)
 ```
 
-#### set
 
-示例：将字符串拆解为字符集合并计算集合的交集、并集和差集
+### set
+
+#### 示例：将字符串拆解为字符集合并计算集合的交集、并集和差集
 
 <font color="red">
 说明：生成的字符集合中没有重复元素。
@@ -241,9 +298,20 @@ set(['r', 'b', 'u', 'n'])
 ```
 
 
-#### zip
+### setattr
 
-示例：两个列表压缩为一个，新列表中的元素为元组。 
+#### 示例
+
+```
+emp1 = Employee("Zara", 2000)
+setattr(emp1, 'age', 7)  # 添加一个 'age' 属性
+```
+
+
+### zip
+
+#### 示例：两个列表压缩为一个，新列表中的元素为元组
+
 ```
 >>> a = [1, 2, 3]
 >>> b = [4, 5, 6, 7]
@@ -251,7 +319,7 @@ set(['r', 'b', 'u', 'n'])
 [(1, 4), (2, 5), (3, 6)]
 ```
 
-示例：解压元组列表，返回二维矩阵模式。
+#### 示例：解压元组列表，返回二维矩阵模式。
 
 ```
 >>> zipped = [(1, 4), (2, 5), (3, 6)]
@@ -259,7 +327,7 @@ set(['r', 'b', 'u', 'n'])
 [(1, 2, 3), (4, 5, 6)]
 ```
 
-示例：解压字符串列表，返回二维矩阵模式。
+#### 示例：解压字符串列表，返回二维矩阵模式。
 
 <font color="red">
 结果列表中的元素个数与最短的字符串长度一致。
