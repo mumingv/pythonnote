@@ -1,5 +1,16 @@
 # 语法FAQ
 
+## 如何安装pip？
+
+### Mac
+
+Mac系统是自带python和easy_install的，但没有自带pip。可以使用easy_install来安装pip。
+
+```bash
+$ sudo easy_install pip
+```
+
+
 ## exit()、sys.exit()、os._exit() 的区别是什么？
 
 ######  

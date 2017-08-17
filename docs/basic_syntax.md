@@ -534,20 +534,16 @@ $ python -Qnew
 
 ## 关键字
 
-###  
-
-#### False
+### False
 
 False表示真值。
 
 
-###  
-
-#### from
+### from
 
 from用于导入模块或导入模块中的类或函数。
 
-示例：导入模块
+#### 示例：导入模块
 
 ```
 >>> import math
@@ -555,7 +551,7 @@ from用于导入模块或导入模块中的类或函数。
 32.0
 ```
 
-示例：导入模块中的函数
+#### 示例：导入模块中的函数
 
 ```
 >>> from math import floor
@@ -564,33 +560,33 @@ from用于导入模块或导入模块中的类或函数。
 ```
 
 
-###  
-
-#### import
+### import
 
 import用于导入模块或导入模块中的类或函数。
 
-示例：导入模块中的类
+#### 示例：导入模块
+
+```
+import sys
+```
+
+#### 示例：导入模块中的类
 
 ```
 from SocketServer import TCPServer, StreamRequestHandler
 ```
 
 
-###  
-
-#### None
+### None
 
 None是一个内建常量，通常用来表示变量值的缺失。
 
 
-###  
-
-#### not
+### not
 
 not是逻辑非运算符。
 
-示例：判断列表是否为空
+#### 示例：判断列表是否为空
 
 ```python
 list1 = []
@@ -602,13 +598,11 @@ empty list
 ```
 
 
-###  
-
-#### or
+### or
 
 or是逻辑或运算符。
 
-示例：判断列表是否为空
+#### 示例：判断列表是否为空
 
 ```python
 if not (readable or writable or exceptional):
@@ -616,11 +610,9 @@ if not (readable or writable or exceptional):
 ```
 
 
-###  
+### print
 
-#### print
-
-示例：输出空行
+#### 示例：输出空行
 
 ```python
 >>> print
@@ -628,7 +620,7 @@ if not (readable or writable or exceptional):
 >>> 
 ```
 
-示例：输出字符串
+#### 示例：输出字符串
 
 ```python
 >>> print 'Hello world!'
@@ -640,13 +632,11 @@ Bli Bli Xiaomoxian!
 ```
 
 
-###  
-
-#### self
+### self
 
 self表示类自身。
 
-示例：类的定义与使用
+#### 示例：类的定义与使用
 
 ```python
 class Person:
@@ -665,9 +655,7 @@ foo.sayHello()
 Hello, world! I'm Jay.
 ```
 
-###  
-
-#### True
+### True
 
 True表示真值。
 

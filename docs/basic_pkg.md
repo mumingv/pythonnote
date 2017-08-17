@@ -1,22 +1,69 @@
 # 包函数
 
-## 进程间通信及网络访问
+## String Services 字符串
+
+### re（部分）正则表达式
+
+参考：[官方](https://docs.python.org/2/library/re.html) & [木名](#docs/pkg_re)
+
+|函数/方法          	|功能                           |
+|-------------------|-------------------------------|
+
+
+## Data Types 数据类型
+
+### collections（部分）高性能容器数据类型
+
+参考：[官方](https://docs.python.org/2/library/collections.html) & [木名](#docs/pkg_collections)
+
+|函数/方法          	|功能                           |
+|-------------------|-------------------------------|
+
+
+## Generic Operating System Services 一般操作系统服务
+
+### os（部分）操作系统接口
+
+参考：[官方](https://docs.python.org/2/library/os.html) & [木名](#docs/pkg_os)
+
+|函数/方法          	|功能                           |
+|-------------------|-------------------------------|
+
+
+### time（部分）时间存取和转化
+
+参考：[官方](https://docs.python.org/2/library/time.html) & [木名](#docs/pkg_time)
+
+|函数/方法          	|功能                           |
+|-------------------|-------------------------------|
+
+
+## Interprocess Communication and Networking 进程间通信和网络访问
 
 ### socket (部分) 底层网络接口
 
 参考：[官方](https://docs.python.org/2/library/socket.html) & [木名](#docs/pkg_socket)
 
-|函数/方法          |功能                           |
+|函数/方法          	|功能                           |
 |-------------------|-------------------------------|
 |socket.socket      |创建套接字                     |
 |socket.gethostname |获取主机名称                   |
 |obj.accept         |接受连接                       |
-|obj.bind           |将主机名(IP)和地址绑定到套接字 |
+|obj.bind           |将主机名(IP)和地址绑定到套接字 		|
 |obj.close          |关闭套接字                     |
 |obj.connect        |连接                           |
 |obj.listen         |侦听                           |
 |obj.recv           |接收数据                       |
 |obj.send           |发送数据                       |
+
+## Internet Data Handling 互联网数据处理
+
+### json JSON编解码
+
+参考：[官方](https://docs.python.org/2/library/json.html) & [木名](#docs/pkg_json)
+
+|函数/方法          	|功能                           |
+|-------------------|-------------------------------|
 
 
 ## Python Runtime Services 运行时服务

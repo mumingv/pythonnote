@@ -81,3 +81,35 @@
 |---------------------------|---------------------------------------|
 |string.translate(str, del="")  |根据 str 给出的表(包含 256 个字符)转换 string 的字符   |
 
+
+## 字符串方法示例
+
+### string.split
+
+函数原型：
+
+```python
+string.split(str="", num=string.count(str))
+```
+
+#### 示例：使用空格切分字符串
+
+```python
+>>> str = 'aaa bbb ccc ddd eee fff ggg'
+>>> str.split(" ")
+['aaa', 'bbb', 'ccc', 'ddd', 'eee', 'fff', 'ggg']
+>>> str.split(" ", 1)
+['aaa', 'bbb ccc ddd eee fff ggg']
+>>> str.split(" ", 2)
+['aaa', 'bbb', 'ccc ddd eee fff ggg']
+```
+
+
+
+
+
+
+
+
+
+

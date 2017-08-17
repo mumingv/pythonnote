@@ -72,6 +72,14 @@
 
 #### list.append
 
+函数原型：
+
+```python
+list.append(obj)
+```
+
+示例： 在列表尾部插入元素
+
 ```python
 >>> list = ['a', 'b', 'c']
 >>> list.append('d')
