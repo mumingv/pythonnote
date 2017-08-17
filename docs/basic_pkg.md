@@ -56,6 +56,7 @@
 
 |函数/方法          	|功能                           |
 |-------------------|-------------------------------|
+|time.time()		|返回一个浮点数表示的时间值，单位：s	|
 
 
 ## Interprocess Communication and Networking 进程间通信和网络访问
@@ -66,15 +67,15 @@
 
 |函数/方法          	|功能                           |
 |-------------------|-------------------------------|
-|socket.socket      |创建套接字                     |
-|socket.gethostname |获取主机名称                   |
-|obj.accept         |接受连接                       |
-|obj.bind           |将主机名(IP)和地址绑定到套接字 		|
-|obj.close          |关闭套接字                     |
-|obj.connect        |连接                           |
-|obj.listen         |侦听                           |
-|obj.recv           |接收数据                       |
-|obj.send           |发送数据                       |
+|socket.socket()      |创建套接字                     |
+|socket.gethostname() |获取主机名称                   |
+|obj.accept()         |接受连接                       |
+|obj.bind()           |将主机名(IP)和地址绑定到套接字 		|
+|obj.close()          |关闭套接字                     |
+|obj.connect()        |连接                           |
+|obj.listen()         |侦听                           |
+|obj.recv()           |接收数据                       |
+|obj.send()           |发送数据                       |
 
 ## Internet Data Handling 互联网数据处理
 

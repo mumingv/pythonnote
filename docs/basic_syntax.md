@@ -583,6 +583,25 @@ del emp1.age  # 删除 'age' 属性
 ```
 
 
+### except
+
+except使用在异常捕获场景。
+
+#### 示例
+
+```
+try:
+    1 / 0
+except Exception as e:
+    '''异常的父类，可以捕获所有的异常'''
+    print "0不能被除"
+else:
+    '''保护不抛出异常的代码'''
+    print "没有异常"
+finally:
+    print "最后总是要执行我"
+```
+
 ### False
 
 False表示真值。
