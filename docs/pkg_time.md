@@ -1,6 +1,6 @@
 # time
 
-## time.time()
+## time.time
 
 返回一个浮点数表示的时间，单位是秒。
 
