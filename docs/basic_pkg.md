@@ -49,6 +49,17 @@
 |os.path.exists() 	|判断文件/目录的路径是否存在			|
 
 
+## File Formats 文件格式
+
+### ConfigParser（部分）配置文件解析
+
+参考：[官方](https://docs.python.org/2/library/configparser.html) & [木名](#docs/pkg_configparser)
+
+|函数/方法          	|功能                           |
+|-------------------|-------------------------------|
+|objConfigParser.get()|获取配置文件某个选项的值			|
+
+
 ## Generic Operating System Services 一般操作系统服务
 
 ### os（部分）操作系统接口
