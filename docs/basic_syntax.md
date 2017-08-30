@@ -558,6 +558,12 @@ $ python -Qnew
 
 ## 关键字
 
+###### 
+
+<font color="red">
+说明：python没有this关键字。
+</font>
+
 ### and
 
 逻辑与操作符。

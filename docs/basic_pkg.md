@@ -127,9 +127,15 @@
 |sys.stderr 		|文件对象，与标准错误对应		|
 
 
+## Python Language Services 语言服务
 
+### keyword 关键字
 
+参考：[官方](https://docs.python.org/2/library/keyword.html) & [木名](#docs/pkg_keyword)
 
-
+|属性/函数/方法       |功能                           |
+|-------------------|-------------------------------|
+|keyword.iskeyword()|检查字符串是否是python的关键字		|
+|keyword.kwlist 	|python所有关键字的列表			|
 
 
