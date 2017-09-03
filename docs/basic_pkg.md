@@ -35,6 +35,17 @@
 |-------------------|-------------------------------|
 
 
+## Numeric and Mathematical Modules 数字和数学模块
+
+### random（部分）随机数
+
+参考：[官方](https://docs.python.org/2/library/random.html) & [木名](#docs/pkg_random)
+
+|函数/方法          	|功能                           |
+|-------------------|-------------------------------|
+|random.randint()	|随机生成指定范围内的整数			|
+|random.random()	|随机生成[0.0, 1.0)范围内的浮点数	|
+
 
 ## File and Directory Access 文件和目录操作
 
