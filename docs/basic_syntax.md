@@ -341,6 +341,15 @@ else:
     print 'negative'
 ```
 
+特殊写法：
+
+```python
+>>> number = -3
+>>> result = 'positive' if number > 0 else 'negative'
+>>> print result
+'negative'
+```
+
 
 #### if...elif...else...
 
