@@ -46,6 +46,11 @@ $ pip install pandas
 
 ## 第2章 Pandas基础工具
 
+### 2.1 Series数据对象的生成
+
+
+### 2.2 Series数据对象的访问
+
 
 ## 第3章 股票数据的获取
 

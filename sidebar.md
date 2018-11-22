@@ -19,6 +19,7 @@
 0. [专题笔记](#docs/topic)
 0. [语法FAQ](#docs/basic_syntax_faq)
 0. [运行FAQ](#docs/basic_run_faq)
+0. [环境FAQ](#docs/basic_env_faq)
 0. [示例](#docs/basic_demo)
 0. [参考资料](#docs/basic_resource)
 
