@@ -40,7 +40,7 @@
 
 ## 慕课网
 
-0. [走进Python量化交易-入门篇](#docs/imooc/quantitative_transaction)
+0. [《走进Python量化交易-入门篇》](#docs/imooc/quantitative_transaction)
 
 
 
