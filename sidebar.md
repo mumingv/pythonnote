@@ -38,6 +38,11 @@
 0. [七月在线](#docs/video_julyedu)
 
 
+## 慕课网
+
+0. [走进Python量化交易-入门篇](#docs/imooc/quantitative_transaction)
+
+
 
 ## 附录 
 
