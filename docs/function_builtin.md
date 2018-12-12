@@ -35,7 +35,7 @@
 |eval 		||
 |execfile	||
 |file 		||
-|filter 	||
+|filter 	|筛选序列中的元素|
 |float 		||
 |format 	||
 |frozenset 	||
@@ -184,6 +184,19 @@ delattr(emp1, 'age')  # 删除 'age' 属性
 0 one
 1 two
 2 three
+```
+
+
+### filter
+
+#### 示例：筛选出列表中的所有奇数
+
+```python
+>>> def is_odd(n):
+...     return n % 2 == 1
+...
+>>> list(filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]))
+[1, 5, 9, 15]
 ```
 
 
