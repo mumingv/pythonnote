@@ -2,7 +2,13 @@
 
 ## 内建函数列表
 
-官方文档：https://docs.python.org/2/library/functions.html
+官方文档2：https://docs.python.org/2/library/functions.html
+
+内建函数所在模块：
+
+```python
+>>> import builtins
+```
 
 ### 
 
@@ -49,11 +55,11 @@
 |list 		||
 |locals 	||
 |long 		||
-|map 		||
+|map 		|map/reduce的map|
 |max 		||
 |memoryview ||
 |min 		||
-|next 		||
+|next 		|从生成器中获取下一个元素|
 |object 	||
 |oct 		||
 |open 		|打开文件|
@@ -73,7 +79,7 @@
 |slice 		||
 |sorted		||
 |staticmethod||
-|str 		||
+|str 		|将其他类型转成字符串类型|
 |sum 		||
 |super 		||
 |tuple 		||
@@ -239,6 +245,47 @@ print len(sys.argv)
 ```
 
 
+### map
+
+#### 示例：根据一个列表生成一个新的列表
+
+```python
+>>> def f(x):
+...     return x * x
+...
+>>> r = map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+>>> list(r)
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+
+### next
+
+#### 示例
+
+```python
+>>> L = [x * x for x in range(10)]
+>>> L
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+```python
+>>> g = (x * x for x in range(10))
+>>> g
+<generator object <genexpr> at 0x1019997c8>
+>>> next(g)
+0
+>>> next(g)
+1
+>>> next(g)
+...
+>>> next(g)
+81
+>>> next(g)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+```
+
 ### range
 
 #### 示例：创建一个包含10个数字的列表
@@ -280,6 +327,16 @@ print repr(obj)
 ```
 ```
 (1, 2, 3)
+```
+
+
+### str
+
+#### 示例
+
+```python
+>>> str(123)
+'123'
 ```
 
 

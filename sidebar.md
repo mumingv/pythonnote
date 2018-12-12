@@ -29,6 +29,7 @@
 0. [文本处理](#docs/official_pkg/text_processing)
 0. [数据类型](#docs/official_pkg/data_types)
 0. [文件系统](#docs/official_pkg/file_sys)
+0. [函数式编程](#docs/official_pkg/functional_programming)
 0. [操作系统](#docs/official_pkg/os)
 
 
