@@ -25,7 +25,7 @@
 |dict 		||
 |dir 		||
 |divmod 	||
-|enumerate  ||
+|enumerate  |生成可枚举对象|
 |eval 		||
 |execfile	||
 |file 		||
@@ -61,7 +61,7 @@
 |pow		||
 |print		||
 |property	||
-|range		||
+|range		|创建列表   |
 |raw_input  ||
 |reduce 	||
 |reload 	|重新导入模块|
@@ -243,8 +243,19 @@ print len(sys.argv)
 
 #### 示例：创建一个包含10个数字的列表
 
+python2:
+
 ```python
 >>> range(10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+python3:
+
+```python
+>>> range(10)
+range(0, 10)
+>>> list(range(10))
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
