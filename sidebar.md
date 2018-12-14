@@ -29,8 +29,11 @@
 0. [文本处理](#docs/official_pkg/text_processing)
 0. [数据类型](#docs/official_pkg/data_types)
 0. [文件系统](#docs/official_pkg/file_sys)
+0. [数据持久化](#docs/official_pkg/persistence)
 0. [函数式编程](#docs/official_pkg/functional_programming)
 0. [操作系统](#docs/official_pkg/os)
+0. [网络和进程间通信](#docs/official_pkg/ipc)
+0. [网络数据处理](#docs/official_pkg/netdata)
 0. [网络协议和支持](#docs/official_pkg/internet_protocol)
 
 
