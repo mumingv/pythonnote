@@ -806,6 +806,12 @@ with用于构造with语句，with语句能够自动进行资源的退出处理�
 ```
 
 
+### yield
+
+#### 参考资料
+
+[Python yield 使用浅析（廖雪峰）](https://www.ibm.com/developerworks/cn/opensource/os-cn-python-yield/index.html)
+
 ### \_\_name\_\_
 
 对于 \_\_name\_\_ 所在的模块（如：hello.py），如果直接执行该模块则其值为 `__main__`；如果该模块被import则其值为该模块名称（如：hello）。
