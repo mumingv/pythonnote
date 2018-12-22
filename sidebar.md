@@ -44,7 +44,12 @@
 
 ## 实例应用
 
-0. [模块接口](#docs/sample_interface)
+- [模块接口](#docs/sample_interface)
+
+
+## 工具笔记
+
+- [anaconda](#docs/tools/anaconda)
 
 
 ## 读书笔记
@@ -55,8 +60,7 @@
 
 ## 视频笔记
 
-0. [七月在线](#docs/video_julyedu)
-
+- [七月在线](#docs/video_julyedu)
 
 ## 慕课网
 
