@@ -4,6 +4,11 @@
 
 授权：<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">署名-非商用许可证</a>
 
+## Mac
+
+- [安装-dmg方式](#docs/mac/install_dmg)
+
+
 ## Python基础
 
 0. [前言](#README)
